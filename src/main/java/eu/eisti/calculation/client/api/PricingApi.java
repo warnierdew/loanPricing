@@ -2,6 +2,7 @@ package eu.eisti.calculation.client.api;
 
 import eu.eisti.calculation.client.invoker.ApiClient;
 
+import eu.eisti.calculation.client.model.Pricing;
 import eu.eisti.calculation.client.model.PricingCriteria;
 
 import java.util.ArrayList;
@@ -23,7 +24,7 @@ import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2019-03-06T15:09:25.186+01:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2019-03-06T16:33:34.022+01:00")
 @Component("eu.eisti.calculation.client.api.PricingApi")
 public class PricingApi {
     private ApiClient apiClient;
@@ -51,10 +52,10 @@ public class PricingApi {
      * <p><b>200</b> - successfull operation
      * <p><b>405</b> - Invalid input
      * @param body ID of PricingId that needs to be updated
-     * @return Object
+     * @return Pricing
      * @throws RestClientException if an error occurs while attempting to invoke the API
      */
-    public Object updatePricingIdWithForm(PricingCriteria body) throws RestClientException {
+    public Pricing updatePricingIdWithForm(PricingCriteria body) throws RestClientException {
         Object postBody = body;
         
         // verify the required parameter 'body' is set
@@ -69,7 +70,7 @@ public class PricingApi {
         final MultiValueMap<String, Object> formParams = new LinkedMultiValueMap<String, Object>();
 
         final String[] accepts = { 
-            "application/xml", "application/json"
+            "application/json"
         };
         final List<MediaType> accept = apiClient.selectHeaderAccept(accepts);
         final String[] contentTypes = { 
@@ -79,7 +80,7 @@ public class PricingApi {
 
         String[] authNames = new String[] {  };
 
-        ParameterizedTypeReference<Object> returnType = new ParameterizedTypeReference<Object>() {};
+        ParameterizedTypeReference<Pricing> returnType = new ParameterizedTypeReference<Pricing>() {};
         return apiClient.invokeAPI(path, HttpMethod.POST, queryParams, postBody, headerParams, formParams, accept, contentType, authNames, returnType);
     }
 }

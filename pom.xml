@@ -2,7 +2,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>eu.eisti</groupId>
-  <artifactId>spring-swagger-codegen-api-client</artifactId>
+  <artifactId>spring-swagger-codegen-api-client-pricing</artifactId>
   <packaging>jar</packaging>
   <name>spring-swagger-codegen-api-client</name>
   <version>0.0.1-SNAPSHOT</version>

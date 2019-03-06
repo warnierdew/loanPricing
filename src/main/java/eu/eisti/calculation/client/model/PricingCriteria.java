@@ -19,39 +19,17 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
-import java.math.BigDecimal;
 
 /**
  * PricingCriteria
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2019-03-06T15:09:25.186+01:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2019-03-06T16:33:34.022+01:00")
 public class PricingCriteria {
-  @JsonProperty("id")
-  private Long id = null;
-
   @JsonProperty("amount")
   private Long amount = null;
 
-  @JsonProperty("rate")
-  private BigDecimal rate = null;
-
-  public PricingCriteria id(Long id) {
-    this.id = id;
-    return this;
-  }
-
-   /**
-   * Get id
-   * @return id
-  **/
-  @ApiModelProperty(value = "")
-  public Long getId() {
-    return id;
-  }
-
-  public void setId(Long id) {
-    this.id = id;
-  }
+  @JsonProperty("duration")
+  private Integer duration = null;
 
   public PricingCriteria amount(Long amount) {
     this.amount = amount;
@@ -62,7 +40,7 @@ public class PricingCriteria {
    * Get amount
    * @return amount
   **/
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(required = true, value = "")
   public Long getAmount() {
     return amount;
   }
@@ -71,22 +49,22 @@ public class PricingCriteria {
     this.amount = amount;
   }
 
-  public PricingCriteria rate(BigDecimal rate) {
-    this.rate = rate;
+  public PricingCriteria duration(Integer duration) {
+    this.duration = duration;
     return this;
   }
 
    /**
-   * Get rate
-   * @return rate
+   * Get duration
+   * @return duration
   **/
-  @ApiModelProperty(example = "0.5", required = true, value = "")
-  public BigDecimal getRate() {
-    return rate;
+  @ApiModelProperty(example = "30", required = true, value = "")
+  public Integer getDuration() {
+    return duration;
   }
 
-  public void setRate(BigDecimal rate) {
-    this.rate = rate;
+  public void setDuration(Integer duration) {
+    this.duration = duration;
   }
 
 
@@ -99,14 +77,13 @@ public class PricingCriteria {
       return false;
     }
     PricingCriteria pricingCriteria = (PricingCriteria) o;
-    return Objects.equals(this.id, pricingCriteria.id) &&
-        Objects.equals(this.amount, pricingCriteria.amount) &&
-        Objects.equals(this.rate, pricingCriteria.rate);
+    return Objects.equals(this.amount, pricingCriteria.amount) &&
+        Objects.equals(this.duration, pricingCriteria.duration);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, amount, rate);
+    return Objects.hash(amount, duration);
   }
 
 
@@ -115,9 +92,8 @@ public class PricingCriteria {
     StringBuilder sb = new StringBuilder();
     sb.append("class PricingCriteria {\n");
     
-    sb.append("    id: ").append(toIndentedString(id)).append("\n");
     sb.append("    amount: ").append(toIndentedString(amount)).append("\n");
-    sb.append("    rate: ").append(toIndentedString(rate)).append("\n");
+    sb.append("    duration: ").append(toIndentedString(duration)).append("\n");
     sb.append("}");
     return sb.toString();
   }

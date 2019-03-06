@@ -24,7 +24,7 @@ import java.math.BigDecimal;
 /**
  * Pricing
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2019-03-06T15:09:25.186+01:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2019-03-06T16:33:34.022+01:00")
 public class Pricing {
   @JsonProperty("PricingId")
   private Long pricingId = null;

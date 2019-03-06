@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 <a name="updatePricingIdWithForm"></a>
 # **updatePricingIdWithForm**
-> Object updatePricingIdWithForm(body)
+> Pricing updatePricingIdWithForm(body)
 
 Updates a Pricing form data
 
@@ -25,7 +25,7 @@ Updates a Pricing form data
 PricingApi apiInstance = new PricingApi();
 PricingCriteria body = new PricingCriteria(); // PricingCriteria | ID of PricingId that needs to be updated
 try {
-    Object result = apiInstance.updatePricingIdWithForm(body);
+    Pricing result = apiInstance.updatePricingIdWithForm(body);
     System.out.println(result);
 } catch (ApiException e) {
     System.err.println("Exception when calling PricingApi#updatePricingIdWithForm");
@@ -41,7 +41,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Object**
+[**Pricing**](Pricing.md)
 
 ### Authorization
 
@@ -50,5 +50,5 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/x-www-form-urlencoded
- - **Accept**: application/xml, application/json
+ - **Accept**: application/json
 
