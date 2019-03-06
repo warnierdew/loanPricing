@@ -50,7 +50,7 @@ import eu.eisti.calculation.client.invoker.auth.HttpBasicAuth;
 import eu.eisti.calculation.client.invoker.auth.ApiKeyAuth;
 import eu.eisti.calculation.client.invoker.auth.OAuth;
 
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2019-03-06T16:33:34.022+01:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2019-03-06T16:44:36.816+01:00")
 @Component("eu.eisti.calculation.client.invoker.ApiClient")
 public class ApiClient {
     public enum CollectionFormat {

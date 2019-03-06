@@ -23,7 +23,7 @@ import io.swagger.annotations.ApiModelProperty;
 /**
  * PricingCriteria
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2019-03-06T16:33:34.022+01:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2019-03-06T16:44:36.816+01:00")
 public class PricingCriteria {
   @JsonProperty("amount")
   private Long amount = null;
